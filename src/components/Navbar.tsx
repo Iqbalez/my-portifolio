@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
@@ -9,6 +9,16 @@ gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 export let smoother: ScrollSmoother;
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = useCallback(() => {
+    setMenuOpen((prev) => !prev);
+  }, []);
+
+  const closeMenu = useCallback(() => {
+    setMenuOpen(false);
+  }, []);
+
   useEffect(() => {
     smoother = ScrollSmoother.create({
       wrapper: "#smooth-wrapper",
@@ -38,36 +48,47 @@ const Navbar = () => {
       ScrollSmoother.refresh(true);
     });
   }, []);
+
   return (
     <>
-      <div className="header">
+      <div className={`header ${menuOpen ? "menu-open" : ""}`}>
         <a href="/#" className="navbar-title" data-cursor="disable">
           IE
         </a>
-        <ul>
+        <button
+          className={`hamburger ${menuOpen ? "hamburger-active" : ""}`}
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul className={menuOpen ? "nav-visible" : ""}>
           <li>
-            <a data-href="#about" href="#about">
+            <a data-href="#about" href="#about" onClick={closeMenu}>
               <HoverLinks text="ABOUT" />
             </a>
           </li>
           <li>
-            <a data-href="#work" href="#work">
+            <a data-href="#work" href="#work" onClick={closeMenu}>
               <HoverLinks text="WORK" />
             </a>
           </li>
           <li>
-            <a data-href="#testimonials" href="#testimonials">
+            <a data-href="#testimonials" href="#testimonials" onClick={closeMenu}>
               <HoverLinks text="TESTIMONIALS" />
             </a>
           </li>
           <li>
-            <a data-href="#contact" href="#contact">
+            <a data-href="#contact" href="#contact" onClick={closeMenu}>
               <HoverLinks text="CONTACT" />
             </a>
           </li>
         </ul>
       </div>
 
+      {menuOpen && <div className="nav-overlay" onClick={closeMenu}></div>}
       <div className="nav-fade"></div>
     </>
   );
