@@ -5,7 +5,7 @@ const testimonials = [
   {
     quote:
       "Working with Iqbal was a seamless experience from start to finish. His attention to detail and ability to translate complex requirements into clean, functional code made our project a success. Highly recommended for any serious development work.",
-    name: "Sarah Mitchell",
+    name: "Fatima Abdulkadir",
     title: "CEO, TechBridge Solutions",
   },
   {
@@ -17,7 +17,7 @@ const testimonials = [
   {
     quote:
       "What sets Iqbal apart is his deep understanding of both frontend and backend systems. He built our entire platform architecture and it has scaled beautifully. A true full-stack engineer who cares about quality.",
-    name: "James Carter",
+    name: "Khalid Mohammed",
     title: "CTO, CloudScale Inc.",
   },
   {
@@ -29,7 +29,7 @@ const testimonials = [
   {
     quote:
       "Iqbal transformed our outdated web presence into a modern, performant application. The new platform loads instantly and our user engagement has increased dramatically. His expertise in modern frameworks is top-notch.",
-    name: "Marcus Chen",
+    name: "Biruk Tadesse",
     title: "Director of Engineering, Vertex Labs",
   },
 ];

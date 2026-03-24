@@ -16,7 +16,7 @@ const Career = () => {
             <div className="career-info-in">
               <div className="career-role">
                 <h4>Full Stack Developer</h4>
-                <h5>Ikshan</h5>
+                <h5>Octopus Tech</h5>
               </div>
               <h3>2020</h3>
             </div>
@@ -29,22 +29,22 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Senior Full Stack Developer</h4>
-                <h5>Monocept (Max Life Insurance)</h5>
+                <h4>Full Stack Developer</h4>
+                <h5>Qali</h5>
               </div>
               <h3>2021</h3>
             </div>
             <p>
-              Led two development teams on Mpro, a large-scale insurance
-              operations platform. Developed multiple modules using React.js &
-              migrated critical functionalities to Node.js microservices.
+              Worked closely with a small team on a large-scale operations
+              platform. Helped develop multiple modules using React.js &
+              contributed to migrating key features to Node.js microservices.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
                 <h4>Full Stack Developer</h4>
-                <h5>Logic Loop</h5>
+                <h5>Mela</h5>
               </div>
               <h3>NOW</h3>
             </div>

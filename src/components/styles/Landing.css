@@ -146,6 +146,7 @@
   bottom: 50px;
   top: inherit;
   z-index: 9;
+  text-align: center;
 }
 
 .landing-info h3 {
@@ -176,6 +177,7 @@
 .landing-h2-info-1 {
   position: absolute;
   top: 0;
+  opacity: 0;
 }
 
 h2.landing-info-h2 {
@@ -191,6 +193,7 @@ h2.landing-info-h2 {
 .landing-h2-2 {
   position: absolute;
   top: 0;
+  opacity: 0;
 }
 
 .landing-desc {
@@ -199,6 +202,28 @@ h2.landing-info-h2 {
   line-height: 1.7;
   color: var(--textSecondary);
   max-width: 380px;
+}
+
+@media screen and (max-width: 359px) {
+  .landing-intro h2 { font-size: 11px; letter-spacing: 2px; }
+  .landing-intro h1 { font-size: 28px; }
+  .landing-desc { font-size: 13px; max-width: 100%; margin-top: 12px; }
+  .landing-info h3 { font-size: 11px; letter-spacing: 2px; }
+  .landing-info h2 { font-size: 20px; }
+  h2.landing-info-h2 { font-size: 24px; }
+  .landing-info { bottom: 30px; }
+  .character-model { height: 45vh; bottom: 30px; }
+}
+
+@media screen and (min-width: 360px) and (max-width: 499px) {
+  .landing-intro h2 { font-size: 12px; letter-spacing: 2px; }
+  .landing-intro h1 { font-size: 32px; }
+  .landing-desc { font-size: 14px; max-width: 100%; margin-top: 14px; }
+  .landing-info h3 { font-size: 12px; letter-spacing: 2px; }
+  .landing-info h2 { font-size: 22px; }
+  h2.landing-info-h2 { font-size: 28px; }
+  .landing-info { bottom: 35px; }
+  .character-model { height: 48vh; bottom: 35px; }
 }
 
 @media screen and (min-width: 500px) {

@@ -6,9 +6,11 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About</h3>
         <p className="para">
-          I design and build web applications that people enjoy using.
-          With expertise across the full stack, I turn complex problems
-          into clean, intuitive interfaces backed by solid architecture.
+          Hey, I'm Iqbal. I build websites and web apps for a living,
+          and honestly I'd probably still be doing it even if nobody
+          paid me. I like making things that feel good to use, look
+          clean, and just work. Frontend, backend, databases, whatever
+          needs doing. Got a problem? I'll figure it out.
         </p>
       </div>
     </div>
